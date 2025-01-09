@@ -1,0 +1,141 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body Styling */
+body {
+    background: linear-gradient(135deg, #4c6793, #192f59);
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Quiz Section Styling */
+.quiz-section {
+    width: 100%;
+    max-width: 600px;
+    background-color: #ffffff;
+    color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Quiz Container */
+#quiz {
+    text-align: center;
+}
+
+/* Question Styling */
+h2.question {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Divider Line */
+hr {
+    border: none;
+    border-top: 2px solid #9a9494;
+    margin: 20px 0;
+}
+
+/* Answer List Styling */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.answer {
+    display: none; /* Radio buttons are visually hidden but still functional */
+}
+
+label {
+    display: block;
+    background-color: #f0f0f0;
+    color: #333;
+    border: 2px solid #ddd;
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    text-align: left;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+label:hover {
+    background-color: #eef;
+    border-color: #4c6793;
+}
+
+input[type="radio"]:checked + label {
+    background-color: #4c6793;
+    color: #fff;
+    border-color: #4c6793;
+}
+
+/* Button Container */
+.btn {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+/* Buttons Styling */
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Next Button */
+#next-btn {
+    background-color: #4c6793;
+    color: #ffffff;
+}
+
+#next-btn:hover {
+    background-color: #354a73;
+    transform: scale(1.05);
+}
+
+/* Submit Button */
+#submit-btn {
+    background-color: #ff5959;
+    color: #ffffff;
+}
+
+#submit-btn:hover {
+    background-color: #cc4747;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .quiz-section {
+        padding: 15px;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+
+    h2.question {
+        font-size: 1.2rem;
+    }
+}
